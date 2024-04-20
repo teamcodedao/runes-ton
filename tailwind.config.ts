@@ -16,6 +16,7 @@ const config: Config = {
       },
       colors: {
         primary: '#5AC3F8',
+        secondary: '#011E2E',
       },
       dropShadow: {
         text: '2px 1px 2px rgba(30, 166, 234, 0.80)',

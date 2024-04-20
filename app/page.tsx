@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import clsx from 'clsx';
+import Marquee from 'react-fast-marquee';
 
 import Nav from './nav';
 import Hamburger from './hamburger';
@@ -70,6 +71,13 @@ export default function Home() {
             <p>Bring Runeston To Diamond Class!</p>
           </h1>
         </div>
+      </section>
+      <section className='bg-secondary py-5 lg:py-6'>
+        <Marquee autoFill className='overflow-y-hidden'>
+          <span className='inline-block px-8 font-sans text-3xl text-white drop-shadow-text lg:text-4xl'>
+            $RUNESTONE BLUE
+          </span>
+        </Marquee>
       </section>
     </div>
   );
