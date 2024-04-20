@@ -74,7 +74,7 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <h1 className='absolute bottom-9 w-full text-center text-4xl'>
+          <h1 className='absolute bottom-11 w-full text-center text-4xl'>
             <p>Runes are here...</p>
             <p>Bring Runeston To Diamond Class!</p>
           </h1>
@@ -83,7 +83,7 @@ export default function Home() {
       <section className='bg-secondary py-5 lg:py-6'>
         <Marquee autoFill className='overflow-y-hidden'>
           <span className='inline-block px-8 font-sans text-3xl text-white drop-shadow-text lg:text-4xl'>
-            $RUNESTONE BLUE
+            <span className='font-mono'>$</span>RUNESTONE BLUE
           </span>
         </Marquee>
       </section>
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
         {/* Content */}
         <div className='absolute inset-0'>
-          <h2 className='absolute bottom-9 w-full text-center text-4xl'>
+          <h2 className='absolute bottom-14 w-full text-center text-4xl sm:bottom-20'>
             <p>Runes are here...</p>
             <p>Bring Runestons To Diamond Class!</p>
           </h2>
@@ -130,7 +130,7 @@ export default function Home() {
             <h2 className='text-5xl uppercase text-primary lg:text-6xl xl:text-[64px]'>
               Vision <br /> statement
             </h2>
-            <ul className='mt-14 list-inside list-["◆"] text-[10px] md:mt-20 lg:mt-32 [&_span]:multi-[`text-2xl;pl-5;translate-y-1;inline-block`]'>
+            <ul className='mt-14 list-inside list-["◆"] text-[10px] md:mt-20 lg:mt-32 [&_span]:multi-[`text-2xl;pl-4;translate-y-1;inline-block`]'>
               <li>
                 <span>No presale</span>
               </li>
