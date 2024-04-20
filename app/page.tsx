@@ -51,8 +51,8 @@ export default function Home() {
                   'max-[560px]:multi-[`text-5xl;-translate-y-2`] max-[560px]:[&>span:not(:first-child)]:hidden'
                 )}
               >
-                {'RUNESTONE BLUE'.split('').map(word => (
-                  <span key={word}>{word}</span>
+                {'RUNESTONE BLUE'.split('').map((word, i) => (
+                  <span key={i}>{word}</span>
                 ))}
               </a>
               <Nav className='max-[1085px]:hidden' />
@@ -111,7 +111,6 @@ export default function Home() {
           </h2>
         </div>
       </section>
-      <section id='tokenomics' className='relative'></section>
       <section id='vision' className='relative'>
         {/* Background */}
         <Image
@@ -140,6 +139,31 @@ export default function Home() {
               <li>No team allocation</li>
               <li>No favoritism to whales</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section id='tokenomics' className='relative'>
+        <div
+          className={clsx(
+            'mx-auto max-w-screen-desktop max-desktop:px-5',
+            'mb-28 mt-12 flex items-center justify-between max-sm:flex-col sm:mt-20'
+          )}
+        >
+          <h2 className='mb-0 flex-1 text-5xl uppercase text-primary sm:mb-28 lg:text-6xl xl:text-[64px]'>
+            Tokenomics
+          </h2>
+          <div className='relative flex flex-1 items-center justify-center'>
+            <img src='/runestone-1.gif' alt='' className='max-w-[50%]' />
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload='auto'
+              className='absolute -bottom-20 w-full object-cover mix-blend-screen'
+            >
+              <source src='/runestone.mp4' type='video/mp4' />
+            </video>
           </div>
         </div>
       </section>
