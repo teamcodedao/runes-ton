@@ -59,7 +59,8 @@ export default function Home() {
               <div className='relative ml-auto shrink-0'>
                 <Image src={buyNowImg} alt='' />
                 <a
-                  href='/'
+                  href='https://dedust.io/swap/TON/EQAX78CALFiYhNpM29dJGtQJJne2YEHinj8K_6Jwu8xkEvDH'
+                  target='_buy'
                   className={clsx(
                     'absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
                     'whitespace-nowrap text-3xl transition',
