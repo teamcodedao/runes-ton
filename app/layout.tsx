@@ -18,6 +18,7 @@ const comicRune = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://runeston.wtf'),
   title: 'Runestone',
   description: 'Bring Runestone To Diamond Class On TON',
 };
