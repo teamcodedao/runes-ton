@@ -18,8 +18,8 @@ const comicRune = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Runestone Blue',
-  description: 'Runes are here. Bring Runeston To Diamond Class!',
+  title: 'Runestone',
+  description: 'Bring Runestone To Diamond Class On TON',
 };
 
 export default function RootLayout({

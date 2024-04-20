@@ -7,6 +7,7 @@ import Hamburger from './hamburger';
 
 import banner1Img from './banner-1.png';
 import banner2Img from './banner-2.png';
+import banner3Img from './banner-3.png';
 import buyNowImg from './buy-now.svg';
 
 export default function Home() {
@@ -107,6 +108,37 @@ export default function Home() {
             <p>Runes are here...</p>
             <p>Bring Runestons To Diamond Class!</p>
           </h2>
+        </div>
+      </section>
+      <section className='relative'>
+        {/* Background */}
+        <Image
+          src={banner3Img}
+          quality={100}
+          priority
+          alt=''
+          className='min-h-[440px] w-full object-cover'
+        />
+        <div className='absolute inset-0'>
+          <div
+            className={clsx(
+              'mx-auto max-w-screen-desktop  max-desktop:px-5',
+              'py-10 lg:py-16'
+            )}
+          >
+            <h2 className='text-5xl uppercase text-primary lg:text-6xl xl:text-[64px]'>
+              Vision <br /> statement
+            </h2>
+            <ul className='mt-14 text-2xl md:mt-20 lg:mt-32'>
+              <li>No presale</li>
+              <li>No farming</li>
+              <li>No secret algo</li>
+              <li>No claim process</li>
+              <li>No paid marketing</li>
+              <li>No team allocation</li>
+              <li>No favoritism to whales</li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
