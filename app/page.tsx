@@ -8,6 +8,7 @@ import Hamburger from './hamburger';
 import banner1Img from './banner-1.png';
 import banner2Img from './banner-2.png';
 import banner3Img from './banner-3.png';
+import banner4Img from './banner-4.png';
 import buyNowImg from './buy-now.svg';
 
 export default function Home() {
@@ -139,6 +140,43 @@ export default function Home() {
               <li>No favoritism to whales</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className='relative'>
+        {/* Background */}
+        <div>
+          <Image
+            src={banner4Img}
+            quality={100}
+            priority
+            alt=''
+            className='min-h-[440px] w-full object-cover'
+          />
+        </div>
+        <div className='absolute inset-0 flex flex-col justify-end'>
+          <div className='relative space-y-2 py-7 after:multi-[`absolute;inset-0;bg-black;opacity-50`] lg:space-y-5 lg:py-12 [&>*]:multi-[`relative;z-10`]'>
+            <h2 className='text-center text-7xl lg:text-8xl'>Contact us</h2>
+            <div className='flex justify-center gap-x-12 py-4 lg:gap-x-20 lg:py-8 xl:py-12'>
+              <a href='https://twitter.com/RunesTon_' target='_twitter'>
+                <img src='/twitter.svg' alt='' className='max-sm:w-[80px]' />
+              </a>
+              <a href='https://t.me/Runeston_portal' target='_telegram'>
+                <img src='/telegram.svg' alt='' className='max-sm:w-[80px]' />
+              </a>
+            </div>
+            <div className='text-center text-2xl sm:text-3xl lg:text-[32px]'>
+              Email:{' '}
+              <a
+                href='mailto:RuneBlueStone@gmail.com'
+                className='hover:multi-[`drop-shadow-text`]'
+              >
+                RuneBlueStone@gmail.com
+              </a>
+            </div>
+          </div>
+          <footer className='px-5 py-3 text-center text-lg uppercase'>
+            © 2024 by runebluestone. All rights reserved.
+          </footer>
         </div>
       </section>
     </div>
