@@ -130,14 +130,28 @@ export default function Home() {
             <h2 className='text-5xl uppercase text-primary lg:text-6xl xl:text-[64px]'>
               Vision <br /> statement
             </h2>
-            <ul className='mt-14 text-2xl md:mt-20 lg:mt-32'>
-              <li>No presale</li>
-              <li>No farming</li>
-              <li>No secret algo</li>
-              <li>No claim process</li>
-              <li>No paid marketing</li>
-              <li>No team allocation</li>
-              <li>No favoritism to whales</li>
+            <ul className='mt-14 list-inside list-["◆"] text-[10px] md:mt-20 lg:mt-32 [&_span]:multi-[`text-2xl;pl-5;translate-y-1;inline-block`]'>
+              <li>
+                <span>No presale</span>
+              </li>
+              <li>
+                <span>No farming</span>
+              </li>
+              <li>
+                <span>No secret algo</span>
+              </li>
+              <li>
+                <span>No claim process</span>
+              </li>
+              <li>
+                <span>No paid marketing</span>
+              </li>
+              <li>
+                <span>No team allocation</span>
+              </li>
+              <li>
+                <span>No favoritism to whales</span>
+              </li>
             </ul>
           </div>
         </div>
