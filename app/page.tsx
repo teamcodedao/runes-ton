@@ -2,6 +2,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 import Nav from './nav';
+import Hamburger from './hamburger';
 
 import banner1Img from './banner-1.png';
 import buyNowImg from './buy-now.svg';
@@ -27,7 +28,7 @@ export default function Home() {
             quality={100}
             priority
             alt=''
-            className='w-full object-cover'
+            className='min-h-[300px] w-full object-cover'
           />
         </div>
         {/* Content */}
@@ -45,7 +46,7 @@ export default function Home() {
               >
                 RUNESTONE BLUE
               </a>
-              <Nav />
+              <Nav className='max-[1085px]:hidden' />
               <div className='relative ml-auto shrink-0'>
                 <Image src={buyNowImg} alt='' />
                 <a
@@ -58,6 +59,9 @@ export default function Home() {
                 >
                   BUY NOW
                 </a>
+              </div>
+              <div className='hidden max-[1085px]:multi-[`block`]'>
+                <Hamburger />
               </div>
             </div>
           </header>
