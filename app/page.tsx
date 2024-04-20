@@ -43,9 +43,14 @@ export default function Home() {
             >
               <a
                 href='/'
-                className='block shrink-0 font-sans text-4xl drop-shadow-text transition hover:drop-shadow-xl-text'
+                className={clsx(
+                  'block shrink-0 font-sans text-4xl drop-shadow-text transition hover:drop-shadow-xl-text',
+                  'max-[560px]:multi-[`text-5xl;-translate-y-2`] max-[560px]:[&>span:not(:first-child)]:hidden'
+                )}
               >
-                RUNESTONE BLUE
+                {'RUNESTONE BLUE'.split('').map(word => (
+                  <span key={word}>{word}</span>
+                ))}
               </a>
               <Nav className='max-[1085px]:hidden' />
               <div className='relative ml-auto shrink-0'>
