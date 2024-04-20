@@ -6,6 +6,7 @@ import Nav from './nav';
 import Hamburger from './hamburger';
 
 import banner1Img from './banner-1.png';
+import banner2Img from './banner-2.png';
 import buyNowImg from './buy-now.svg';
 
 export default function Home() {
@@ -83,6 +84,30 @@ export default function Home() {
             $RUNESTONE BLUE
           </span>
         </Marquee>
+      </section>
+      <section className='relative'>
+        {/* Background */}
+        <div className='relative'>
+          <Image
+            src={banner2Img}
+            quality={100}
+            priority
+            alt=''
+            className='w-full object-cover'
+          />
+          <img
+            src='/runestone-1.gif'
+            alt=''
+            className='absolute left-1/2 top-0 h-[627px] max-h-[80%] -translate-x-1/2 lg:-top-16'
+          />
+        </div>
+        {/* Content */}
+        <div className='absolute inset-0'>
+          <h2 className='absolute bottom-9 w-full text-center text-4xl'>
+            <p>Runes are here...</p>
+            <p>Bring Runestons To Diamond Class!</p>
+          </h2>
+        </div>
       </section>
     </div>
   );
