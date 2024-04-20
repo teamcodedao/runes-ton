@@ -14,7 +14,7 @@ import buyNowImg from './buy-now.svg';
 export default function Home() {
   return (
     <div className='min-h-screen'>
-      <section className='relative'>
+      <section id='home' className='relative'>
         {/* Background */}
         <div className='relative'>
           <video
@@ -111,7 +111,8 @@ export default function Home() {
           </h2>
         </div>
       </section>
-      <section className='relative'>
+      <section id='tokenomics' className='relative'></section>
+      <section id='vision' className='relative'>
         {/* Background */}
         <Image
           src={banner3Img}
@@ -142,7 +143,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='relative'>
+      <section id='contact' className='relative'>
         {/* Background */}
         <div>
           <Image
